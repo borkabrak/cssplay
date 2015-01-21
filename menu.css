@@ -1,6 +1,6 @@
 
 body {
-    background-color: #e28b1f;
+    background-color: #d3bb7c;
 }
 
 .marker {
@@ -15,8 +15,8 @@ body {
 
     border-width: 1.5em;
     border-left-color: green;
-    -webkit-transform-origin: 25%;
-    -webkit-transition: -webkit-transform 0.4s;
+    transform-origin: 25%;
+    transition: transform 0.4s;
 
 }
 
@@ -24,27 +24,30 @@ aside {
   width: 60%;
 }
 
-section {
-    background-color: #66afff;
+div.content {
+    background-color: white;
     border: 0;
     white-space: pre;
     width: 50em;
     margin-left: 2em;
-    -webkit-transition: 0.4s;
-    
+    transition: 0.4s;
+
     width: 0;
     max-height: 0;
     overflow: hidden;
 }
 
 .marker:hover {
-    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
 }
 
-.marker:hover+section, .marker+section:hover {
+.marker:hover+div.content, .marker+div.content:hover {
     width: 60%;
     max-height: 900px;
     border: outset #88a 0.3em;
     border-radius: 0.5em;
 }
 
+section {
+    width: 65%;
+}
