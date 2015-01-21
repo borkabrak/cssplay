@@ -29,12 +29,14 @@ div.content {
     white-space: pre;
     width: 50em;
     margin-left: 2em;
+    margin-bottom: 2em;
     transition: 0.4s;
     width: 0;
     overflow: hidden;
     border: solid transparent 0.3em;
     border-left: 0;
     border-right: 0;
+    color: white;
 }
 
 .marker:hover, section:hover .marker {
@@ -46,10 +48,17 @@ div.content {
     max-height: 900px;
     border: outset #88a 0.3em;
     border-radius: 0.5em;
+    color: black;
+    padding-right: 2em;
 }
 
 section {
     width: 65%;
-    border: solid #c3ab6c 1px;
+    border-bottom: solid #a38b4c 1px;
     border-radius: 0.5em;
+    transition: 0.4s;
+}
+
+section:hover {
+  background-color: #e3cb8c;
 }
