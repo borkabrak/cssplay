@@ -26,22 +26,22 @@ aside {
 
 div.content {
     background-color: white;
-    border: 0;
     white-space: pre;
     width: 50em;
     margin-left: 2em;
     transition: 0.4s;
-
     width: 0;
-    max-height: 0;
     overflow: hidden;
+    border: solid transparent 0.3em;
+    border-left: 0;
+    border-right: 0;
 }
 
-.marker:hover {
+.marker:hover, section:hover .marker {
     transform: rotate(90deg);
 }
 
-.marker:hover+div.content, .marker+div.content:hover {
+.marker:hover+div.content, .marker+div.content:hover, section:hover div.content {
     width: 60%;
     max-height: 900px;
     border: outset #88a 0.3em;
@@ -50,4 +50,6 @@ div.content {
 
 section {
     width: 65%;
+    border: solid #c3ab6c 1px;
+    border-radius: 0.5em;
 }
