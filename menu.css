@@ -1,6 +1,12 @@
 
 body {
     background-color: #d3bb7c;
+    width: 65%;
+    font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+  color: #844;
 }
 
 .marker {
@@ -20,14 +26,11 @@ body {
 
 }
 
-aside {
-  width: 60%;
-}
-
 div.content {
+    font-family: 'Comfortaa', cursive;
     background-color: white;
+    background: transparent;
     white-space: pre;
-    width: 50em;
     margin-left: 2em;
     margin-bottom: 2em;
     transition: 0.4s;
@@ -44,17 +47,18 @@ div.content {
 }
 
 .marker:hover+div.content, .marker+div.content:hover, section:hover div.content {
-    width: 60%;
+    width: 80%;
     max-height: 900px;
     border: outset #88a 0.3em;
     border-radius: 0.5em;
     color: black;
     padding-right: 2em;
+    background: white;
 }
 
 section {
-    width: 65%;
     border-bottom: solid #a38b4c 1px;
+    border-right: solid #a38b4c 1px;
     border-radius: 0.5em;
     transition: 0.4s;
 }
